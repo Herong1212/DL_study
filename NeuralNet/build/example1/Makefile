@@ -117,49 +117,49 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-example1/CMakeFiles/main.dir/rule:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example1/CMakeFiles/main.dir/rule
-.PHONY : example1/CMakeFiles/main.dir/rule
+example1/CMakeFiles/example1.dir/rule:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example1/CMakeFiles/example1.dir/rule
+.PHONY : example1/CMakeFiles/example1.dir/rule
 
 # Convenience name for target.
-main: example1/CMakeFiles/main.dir/rule
-.PHONY : main
+example1: example1/CMakeFiles/example1.dir/rule
+.PHONY : example1
 
 # fast build rule for target.
-main/fast:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/main.dir/build.make example1/CMakeFiles/main.dir/build
-.PHONY : main/fast
+example1/fast:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/build
+.PHONY : example1/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+example1.o: example1.cpp.o
+.PHONY : example1.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/main.dir/build.make example1/CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+example1.cpp.o:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/example1.cpp.o
+.PHONY : example1.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+example1.i: example1.cpp.i
+.PHONY : example1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/main.dir/build.make example1/CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+example1.cpp.i:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/example1.cpp.i
+.PHONY : example1.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+example1.s: example1.cpp.s
+.PHONY : example1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/main.dir/build.make example1/CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+example1.cpp.s:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/example1.cpp.s
+.PHONY : example1.cpp.s
 
 src/NeuralNetwork.o: src/NeuralNetwork.cpp.o
 .PHONY : src/NeuralNetwork.o
 
 # target to build an object file
 src/NeuralNetwork.cpp.o:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/main.dir/build.make example1/CMakeFiles/main.dir/src/NeuralNetwork.cpp.o
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/src/NeuralNetwork.cpp.o
 .PHONY : src/NeuralNetwork.cpp.o
 
 src/NeuralNetwork.i: src/NeuralNetwork.cpp.i
@@ -167,7 +167,7 @@ src/NeuralNetwork.i: src/NeuralNetwork.cpp.i
 
 # target to preprocess a source file
 src/NeuralNetwork.cpp.i:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/main.dir/build.make example1/CMakeFiles/main.dir/src/NeuralNetwork.cpp.i
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/src/NeuralNetwork.cpp.i
 .PHONY : src/NeuralNetwork.cpp.i
 
 src/NeuralNetwork.s: src/NeuralNetwork.cpp.s
@@ -175,7 +175,7 @@ src/NeuralNetwork.s: src/NeuralNetwork.cpp.s
 
 # target to generate assembly for a file
 src/NeuralNetwork.cpp.s:
-	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/main.dir/build.make example1/CMakeFiles/main.dir/src/NeuralNetwork.cpp.s
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/src/NeuralNetwork.cpp.s
 .PHONY : src/NeuralNetwork.cpp.s
 
 # Help Target
@@ -186,10 +186,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... example1"
+	@echo "... example1.o"
+	@echo "... example1.i"
+	@echo "... example1.s"
 	@echo "... src/NeuralNetwork.o"
 	@echo "... src/NeuralNetwork.i"
 	@echo "... src/NeuralNetwork.s"

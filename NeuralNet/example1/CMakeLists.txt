@@ -9,8 +9,8 @@ include_directories(
     "/usr/local/lib/libtorch/include"
     ./include)
 
-add_executable(main main.cpp src/NeuralNetwork.cpp)
+add_executable(example1 example1.cpp src/NeuralNetwork.cpp)
 
-target_link_libraries(main ${TORCH_LIBRARIES})
+target_link_libraries(example1 ${TORCH_LIBRARIES})
 
-set_property(TARGET main PROPERTY CXX_STANDARD 17)
+set_property(TARGET example1 PROPERTY CXX_STANDARD 17)

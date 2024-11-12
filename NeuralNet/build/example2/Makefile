@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dsg/DL_study/NeuralNet/build/CMakeFiles /home/dsg/DL_study/NeuralNet/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/dsg/DL_study/NeuralNet/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dsg/DL_study/NeuralNet/build/CMakeFiles /home/dsg/DL_study/NeuralNet/build/example2//CMakeFiles/progress.marks
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example2/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dsg/DL_study/NeuralNet/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example2/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dsg/DL_study/NeuralNet/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named example1
+# Convenience name for target.
+example2/CMakeFiles/example2.dir/rule:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example2/CMakeFiles/example2.dir/rule
+.PHONY : example2/CMakeFiles/example2.dir/rule
 
-# Build rule for target.
-example1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example1
-.PHONY : example1
+# Convenience name for target.
+example2: example2/CMakeFiles/example2.dir/rule
+.PHONY : example2
 
 # fast build rule for target.
-example1/fast:
-	$(MAKE) $(MAKESILENT) -f example1/CMakeFiles/example1.dir/build.make example1/CMakeFiles/example1.dir/build
-.PHONY : example1/fast
+example2/fast:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example2/CMakeFiles/example2.dir/build.make example2/CMakeFiles/example2.dir/build
+.PHONY : example2/fast
+
+example2.o: example2.cpp.o
+.PHONY : example2.o
+
+# target to build an object file
+example2.cpp.o:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example2/CMakeFiles/example2.dir/build.make example2/CMakeFiles/example2.dir/example2.cpp.o
+.PHONY : example2.cpp.o
+
+example2.i: example2.cpp.i
+.PHONY : example2.i
+
+# target to preprocess a source file
+example2.cpp.i:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example2/CMakeFiles/example2.dir/build.make example2/CMakeFiles/example2.dir/example2.cpp.i
+.PHONY : example2.cpp.i
+
+example2.s: example2.cpp.s
+.PHONY : example2.s
+
+# target to generate assembly for a file
+example2.cpp.s:
+	cd /home/dsg/DL_study/NeuralNet/build && $(MAKE) $(MAKESILENT) -f example2/CMakeFiles/example2.dir/build.make example2/CMakeFiles/example2.dir/example2.cpp.s
+.PHONY : example2.cpp.s
 
 # Help Target
 help:
@@ -137,7 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... example1"
+	@echo "... example2"
+	@echo "... example2.o"
+	@echo "... example2.i"
+	@echo "... example2.s"
 .PHONY : help
 
 
@@ -149,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dsg/DL_study/NeuralNet/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -542,6 +542,15 @@ example1_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 example1_SOURCE_DIR:STATIC=/home/dsg/DL_study/NeuralNet/example1
 
+//Value Computed by CMake
+example2_BINARY_DIR:STATIC=/home/dsg/DL_study/NeuralNet/build/example2
+
+//Value Computed by CMake
+example2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+example2_SOURCE_DIR:STATIC=/home/dsg/DL_study/NeuralNet/example2
+
 //Path to a library.
 kineto_LIBRARY:FILEPATH=/usr/local/lib/libtorch/lib/libkineto.a
 
