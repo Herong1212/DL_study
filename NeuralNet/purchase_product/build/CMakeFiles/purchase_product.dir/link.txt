@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/purchase_product.dir/purchase_product.cpp.o CMakeFiles/purchase_product.dir/src/Purchase_product.cpp.o -o purchase_product 

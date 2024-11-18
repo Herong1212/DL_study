@@ -1,0 +1,12 @@
+ 1
+ 2
+[ CPUFloatType{2} ]
+ 2
+ 3
+[ CPUFloatType{2} ]
+ 3
+ 4
+[ CPUFloatType{2} ]
+ 4
+ 5
+[ CPUFloatType{2} ]
